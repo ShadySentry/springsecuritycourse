@@ -5,16 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/auth")
+@RequestMapping("/auth/")
 public class AuthController {
 
-    @GetMapping("/login")
+    @GetMapping("login")
     public String getLoginPage(){
-        return "login.html";
-    }
-
-    @GetMapping("/success")
-    public String getSuccessPage(){
-        return "success";
+        return "login";
     }
 }
