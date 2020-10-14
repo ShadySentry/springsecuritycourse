@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>11</java.version>
+        <jjwt.version>0.9.1</jjwt.version>
+        <postgresql.version>42.2.14</postgresql.version>
     </properties>
 
     <dependencies>
@@ -55,8 +57,15 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.14</version>
+            <version>${postgresql.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jjwt.version}</version>
+        </dependency>
+
 
     </dependencies>
 
