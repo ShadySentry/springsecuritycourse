@@ -19,11 +19,12 @@ import java.util.Date;
 @Component
 public class JwtTokenProvider {
     @Value("${jwt.secret}")
-    private static String secretKey;
+    private  String secretKey;
     @Value("${jwt.expiration}")
     private int validityInMillis;
     @Value("${jwt.header}")
     private String authorizationHeader;
+
     private final UserDetailsService userDetailsService;
 
     @Autowired
