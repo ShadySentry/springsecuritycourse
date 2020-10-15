@@ -65,8 +65,6 @@
             <artifactId>jjwt</artifactId>
             <version>${jjwt.version}</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
